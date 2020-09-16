@@ -7,7 +7,7 @@ import useWebAnimations from "@wellyshen/use-web-animations";
 function App() {
   
 
-  const { ref, playState ,getAnimation } = useWebAnimations({
+  const { ref, getAnimation } = useWebAnimations({
     keyframes: {
       transform: "translateX(1450px) translateY(-80px)", // Move by 500px
 
@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      <img  ref={ref} className="copter"  src={copter}/>
+      <img  ref={ref} className="copter"  src={copter} alt="copter"/>
       <div className="btns">
       <button className="btn" onClick={play}> Play</button>
       <button className="btn" onClick={pause}>Pause</button>
